@@ -2,11 +2,11 @@ const { WebClient } = require("@slack/web-api");
 const axios = require("axios").default;
 const images = {
   morning:
-    "https://images.unsplash.com/photo-1517188206596-1e1f7c954177?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
+    "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-980x653.jpg",
   afternoon:
-    "https://images.unsplash.com/photo-1566452348683-91f934cd9051?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2090&q=80",
+    "https://www.scusd.edu/sites/main/files/imagecache/tile/main-images/camera_lense_0.jpeg",
   night:
-    "https://images.unsplash.com/photo-1519446251021-1c4ee77fec1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80",
+    "https://media.macphun.com/img/uploads/customer/how-to/608/15542038745ca344e267fb80.28757312.jpg?q=85&w=1340",
 };
 async function setPFP() {
   var hour = new Date().getHours() + 8;
