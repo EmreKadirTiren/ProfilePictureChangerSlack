@@ -9,7 +9,7 @@ const images = {
     "https://images.unsplash.com/photo-1519446251021-1c4ee77fec1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80",
 };
 async function setPFP() {
-  var hour = new Date().getHours() + 2;
+  var hour = new Date().getHours() + 8;
   let image;
   if (5 < hour && hour < 12) {
     image = await axios.get(images.morning, {
@@ -31,7 +31,4 @@ async function setPFP() {
   });
 }
 
-export default async (req, res) => {
-  await setPFP();
-  res.send("Started changing your PFP!");
-};
+setPFP();
