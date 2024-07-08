@@ -9,7 +9,7 @@ const images = {
     "https://media.macphun.com/img/uploads/customer/how-to/608/15542038745ca344e267fb80.28757312.jpg?q=85&w=1340",
 };
 async function setPFP() {
-  var hour = new Date().getHours() + 8;
+  var hour = new Date().getHours() + 2;
   let image;
   if (5 < hour && hour < 12) {
     image = await axios.get(images.morning, {
